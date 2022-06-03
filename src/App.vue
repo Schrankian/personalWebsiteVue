@@ -12,8 +12,9 @@ import { RouterLink, RouterView } from 'vue-router'
     </nav>
     
   </header>
-
-  <RouterView />
+  <div class="capture">
+    <RouterView />
+  </div>
 </template>
 
 <style>
@@ -25,6 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
   padding: 2rem;
 
   font-weight: normal;
+}
+
+.capture {
+  width: 60rem;
 }
 
 header {

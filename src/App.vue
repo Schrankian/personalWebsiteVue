@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
@@ -36,25 +35,25 @@ header {
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: white;
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-image: var(--color-gradient);
   }
 }
 
 nav {
-  width: 100%;
+  width: 5%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: orangered;
 }
 
 nav a.router-link-exact-active:hover {
@@ -64,7 +63,8 @@ nav a.router-link-exact-active:hover {
 nav a {
   font-size: 2.5rem;
   display: flex;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 10rem;
 }
 
 @media (min-width: 1024px) {
@@ -82,7 +82,6 @@ nav a {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   header .wrapper {

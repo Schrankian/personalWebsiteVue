@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <img src="personal.jpg" alt="Personal Photo of Fabian Schuster" width="400" height="600">
+      
     </div>
   </div>
 </template>

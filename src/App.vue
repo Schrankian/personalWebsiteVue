@@ -9,12 +9,15 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/about">About</RouterLink>
     <RouterLink to="/contact">Contact</RouterLink>
   </div>
-  <div class="maindisplay">
+  <div>
     <RouterView />
   </div>
+ 
 </template>
 
 <style>
+
+
 @import '@/assets/base.css';
 
 .maindisplay{
@@ -24,19 +27,18 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .sidebar {
-  height: 100%;
-    width: 300px;
-    position: fixed;
+    display: flex;
+    align-items: center;
     z-index: 1;
-    top: 0;
-    left: 0;
     background-color: var(--color-background);
     overflow-x: hidden;
-    padding-top: 20px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .sidebar a {
-    padding: 13px 8px 8px 60px;
+    padding-top: 10px;
+    padding-left: 30px;
     text-decoration: none;
     font-size: 30px;
     color: var(--color-text);
@@ -68,17 +70,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 170px 1fr;
     padding: 0 2rem;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>

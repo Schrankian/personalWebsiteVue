@@ -2,7 +2,7 @@
 :root {
   --color-background: #181818;
     --color-background-soft: #222222;
-    --color-background-mute: #282828;
+    --color-background-mute: #6b6b6b;
   
     --color-border: rgba(84, 84, 84, 0.48);
     --color-border-hover: rgba(84, 84, 84, 0.65);

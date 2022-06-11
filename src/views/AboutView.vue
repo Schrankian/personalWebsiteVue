@@ -50,12 +50,6 @@
 </template>
 
 <style>
-body {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-}
-
 img {
   border-radius: 20%;
 }

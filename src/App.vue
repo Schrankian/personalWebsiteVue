@@ -37,20 +37,19 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .sidebar a {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 30px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--color-text);
     display: block;
     transition: 0.3s;
 }
 
-@media (hover: hover) {
-  a:hover {
+  .sidebar a:hover {
     color: orangered;
+    padding-left: 50px;
   }
-}
 
 .sidebar a.router-link-exact-active {
   color: orangered;
@@ -70,7 +69,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   #app {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 250px 1fr;
     padding: 0 2rem;
   }
 }

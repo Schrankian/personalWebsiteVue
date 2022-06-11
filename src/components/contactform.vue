@@ -15,6 +15,11 @@
 </template>
 
 <style scoped>
+
+
+
+
+
 @import '@/assets/base.css';
 input {
     width: 100%;
@@ -55,6 +60,8 @@ textarea:focus {
 ::placeholder {
     color: white;
     opacity: 0.6;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+            Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 button[type=submit] {
@@ -66,6 +73,11 @@ button[type=submit] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type=submit]:hover {
+    box-shadow: 5px 5px 20px rgba(255, 68, 0, 0.466);
 }
 
 </style>

@@ -22,6 +22,7 @@ import Contactform from '../components/contactform.vue'
 <style scoped>
 
 
+
 @import '@/assets/base.css';
 
 p {
@@ -38,11 +39,13 @@ a:hover {
   color: grey;
 }
 
+@media (min-width: 1024px) {
 .contact-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-right: 5%;
   height: 100%;
+}
 }
 
 .contact-body-item {

@@ -63,6 +63,8 @@ import { RouterLink, RouterView } from 'vue-router'
   }
     
   .sidebar {
+    padding-left: 25px;
+    justify-content: left;
     height: 100%;
     width: 250px;
     position: fixed;

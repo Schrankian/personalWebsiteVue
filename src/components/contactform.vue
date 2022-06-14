@@ -20,6 +20,7 @@
 
 
 
+
 @import '@/assets/base.css';
 input {
     width: 100%;
@@ -65,7 +66,7 @@ textarea:focus {
 }
 
 button[type=submit] {
-    background-color: orangered;
+    background-color: var(--color-accent);
     border: none;
     border-radius: 4px;
     color: white;
@@ -77,7 +78,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    box-shadow: 5px 5px 20px rgba(255, 68, 0, 0.466);
+    box-shadow: -5px 5px 15px var(--color-accent);
 }
 
 </style>

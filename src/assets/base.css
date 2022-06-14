@@ -9,6 +9,8 @@
   
     --color-heading: rgba(235, 235, 235, 0.932);
     --color-text: rgba(235, 235, 235, 0.842);
+
+    --color-accent: rgb(59, 92, 236);
 }
 
 *,

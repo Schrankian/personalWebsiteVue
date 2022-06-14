@@ -9,31 +9,27 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/about">About</RouterLink>
     <RouterLink to="/contact">Contact</RouterLink>
   </div>
-  <div>
-    <RouterView />
-  </div>
- 
+  <RouterView />
 </template>
+
 
 <style>
 
 
+
+
 @import '@/assets/base.css';
 
-.maindisplay{
- height: 100%;
- width: 100%;
- padding-left: 300px;
-}
 
 .sidebar {
     display: flex;
     align-items: center;
-    z-index: 1;
+    justify-content: center;
     background-color: var(--color-background);
     overflow-x: hidden;
     flex-wrap: wrap;
     align-content: center;
+    z-index: 1;
 }
 
 .sidebar a {
@@ -47,12 +43,12 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
   .sidebar a:hover {
-    color: orangered;
+    color: var(--color-accent);
     padding-left: 50px;
   }
 
 .sidebar a.router-link-exact-active {
-  color: orangered;
+  color: var(--color-accent);
 }
 
 
@@ -60,17 +56,18 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 
-
-
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-  }
 
-  #app {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    padding: 0 2rem;
+  body {
+      display: flex;
+  }
+    
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 </style>

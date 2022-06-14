@@ -1,63 +1,78 @@
 <template>
-  <div class="about-layout">
-    <h1 class="header">Hey, I'm Fabian Schuster</h1>
-    <h4 class="header2">Path of Education:</h4>
-    <div class="row">
-      <div class="timeline">
-        <div class="outer">
-          <div class="card">
-            <div class="info">
-              <h3 class="title">2010-2014</h3>
-              <p>I attended the 95th elementary school "Caroline Neuber" in Dresden for 4 Years</p>
+  <div class="grid">
+    <div class="about-layout">
+      <h1 class="header">Hey, I'm Fabian Schuster</h1>
+      <h4 class="header2">Path of Education:</h4>
+      <div class="row">
+        <div class="timeline">
+          <div class="outer">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">2010-2014</h3>
+                <p>I attended the 95th elementary school "Caroline Neuber" in Dresden for 4 Years</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">2014-2022</h3>
+                <p>I attended the "Julius Ambrosius Hülße Gymnasium" in Dresden for 8 Years</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">2022</h3>
+                <p>I finished the Abitur at "Julius Ambrosius Hülße Gymnasium" with the final grade of 0.0 <br>
+                  (Abitur is equivalent to A-level)</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">2022-Now</h3>
+                <p>I started a dual study in Dresden, where I study at the "Berufsakademie" in Dresden and work at a
+                  company called "Spektra"</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">Future</h3>
+                <p>I am just at the beginning of my wonderful Journey of life. I completed the standard education and now
+                  my Path is unique and
+                  full of possibilities. It isn't possible to always make the right choice, but I hope I find a place in
+                  this huge World, which
+                  I enjoy living, so I don't have to regret anything.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">2014-2022</h3>
-              <p>I attended the "Julius Ambrosius Hülße Gymnasium" in Dresden for 8 Years</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">2022</h3>
-              <p>I finished the Abitur at "Julius Ambrosius Hülße Gymnasium" with the final grade of 0.0 <br>
-                (Abitur is equivalent to A-level)</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">2022-Now</h3>
-              <p>I started a dual study in Dresden, where I study at the "Berufsakademie" in Dresden and Work at a
-                company called "Spektra"</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Future</h3>
-              <p>I am just at the beginning of my wonderful Journey of life. I completed the standard education and now
-                my Path is unique and
-                full of possibilities. It isn't possible to always make the right choice, but I hope I find a place in
-                this huge World, which
-                I enjoy living so I don't have to regret anything.
-              </p>
-            </div>
-          </div>
-        </div>
+        </div> 
       </div>
-      
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
+
+
+
+
+@import '@/assets/base.css';
+
+
 img {
   border-radius: 20%;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    padding-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
 }
 
 .about-layout {
   display: flex;
   flex-direction: column;
-  min-height: inherit;
 }
 
 .header {
@@ -106,7 +121,7 @@ img {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid orangered;
+  border: solid var(--color-accent);
 }
 
 /* Setting the border of top, bottom, left */
@@ -157,7 +172,7 @@ img {
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: var(--color-accent);
   position: relative;
 }
 
@@ -169,7 +184,7 @@ img {
   height: 20px;
   background: white;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid var(--color-accent);
 }
 
 /* text right if the card is even  */

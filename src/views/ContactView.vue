@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Contactform from '../components/contactform.vue'
+import ContactformVue from '../components/contactform.vue'
 </script>
 
 <template>
@@ -14,12 +14,14 @@ import Contactform from '../components/contactform.vue'
       <div class="app-contact">CONTACT INFO : <a href="https://www.google.com">Some important info</a></div>
     </div>
     <div class="contact-body-item right">
-      <Contactform />
+      <ContactformVue/>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+
 
 
 
@@ -44,6 +46,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-right: 5%;
+  padding-left: 250px;
   height: 100%;
 }
 }
@@ -67,7 +70,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: orangered;
+  color: var(--color-accent);
   font-size: 70px;
 }
 
@@ -79,10 +82,11 @@ a:hover {
   bottom: -10px;
   width: 100px;
   height: 4px;
-  background: orangered;
+  background: var(--color-accent);
 }
 
 .app-contact {
+  display: none;
   margin-top: auto;
   font-size: 8px;
   color: #888;

@@ -1,6 +1,11 @@
 <template>
   <div class="display">
-    
+    <div class="card">
+      <h1 class="heading">Wordle Clone</h1>
+    </div>
+    <div class="card">
+      <h1 class="heading">Project 2</h1>
+    </div>
   </div>
 </template>
 
@@ -8,8 +13,13 @@
 
 
 
+@media (min-width: 1024px) {
+  .display {
+      padding-left: 250px;
+  }
+}
+
 .display {
-  padding-left: 250px;
   width: 100vw;
   display: flex;
   flex-direction: column;

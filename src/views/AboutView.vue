@@ -47,6 +47,7 @@
         </div> 
       </div>
     </div>
+    <img src="/public/personal-transparent.png">
   </div>
 </template>
 
@@ -60,6 +61,9 @@
 
 img {
   border-radius: 20%;
+  height: 60%;
+  margin-top: 25%;
+  margin-left: 35%;
 }
 
 @media (min-width: 1024px) {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ContactformVue from '../components/contactform.vue'
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -9,14 +10,16 @@ import ContactformVue from '../components/contactform.vue'
         <span>CONTACT</span>
         <span>ME</span>
       </div>
-      <p>You want to contact me? <br> Simply write an email to <a href="mailto: contact@fabianschuster.net">contact@fabianschuster.net</a> or 
-         use the contact form on the right.</p>
-      <div class="app-contact">CONTACT INFO : <a href="https://www.google.com">Some important info</a></div>
+      <p>You want to contact me? <br> Simply write an email to <a
+          href="mailto: contact@fabianschuster.net">contact@fabianschuster.net</a> or
+        use the contact form on the right.</p>
+      <RouterLink class="app-contact" to="/privacy-policy">Privacy Policy</RouterLink>
     </div>
     <div class="contact-body-item right">
-      <ContactformVue/>
+      <ContactformVue />
     </div>
   </div>
+
 </template>
 
 <style scoped>
@@ -86,7 +89,7 @@ a:hover {
 }
 
 .app-contact {
-  display: none;
+  width: fit-content;
   margin-top: auto;
   font-size: 8px;
   color: #888;

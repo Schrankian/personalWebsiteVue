@@ -1,5 +1,6 @@
 <script setup lang="ts">
-window.onload = function () {
+import { onMounted } from 'vue'
+onMounted(() => {
   const now:Date = new Date();
   const birthDate:Date = new Date(2003,7,15);
   let age = now.getFullYear() - birthDate.getFullYear();
@@ -10,14 +11,14 @@ window.onload = function () {
   }
 
   document.getElementById('output')!.innerHTML = String(age);
-}
+})
 </script>
 
 <template>
   <div class="grid">
     <div class="about-layout">
       <h1>Hey, I'm Fabian Schuster</h1>
-      <p>An <ins id="output">18</ins>-year-old enthusiastic Student who loves coding.</p>
+      <p>An <ins id="output">1800</ins>-year-old enthusiastic Student who loves coding.</p>
       <h2>Path of Education:</h2>
       <div class="row">
         <div class="timeline">

@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="contact-body-item left">
       <div class="app-title">
         <span>CONTACT</span>
-        <span>ME</span>
+        <span style="margin-top: -23px;">ME</span>
       </div>
       <p>You want to contact me? <br> Simply write an email to <a
           href="mailto: contact@fabianschuster.net">contact@fabianschuster.net</a> or

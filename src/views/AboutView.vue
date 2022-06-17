@@ -1,8 +1,24 @@
+<script setup lang="ts">
+window.onload = function () {
+  const now:Date = new Date();
+  const birthDate:Date = new Date(2003,7,15);
+  let age = now.getFullYear() - birthDate.getFullYear();
+  const m = now.getMonth() - birthDate.getMonth();
+
+  if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  document.getElementById('output')!.innerHTML = String(age);
+}
+</script>
+
 <template>
   <div class="grid">
     <div class="about-layout">
-      <h1 class="header">Hey, I'm Fabian Schuster</h1>
-      <h4 class="header2">Path of Education:</h4>
+      <h1>Hey, I'm Fabian Schuster</h1>
+      <p>An <ins id="output">18</ins>-year-old enthusiastic Student who loves coding.</p>
+      <h2>Path of Education:</h2>
       <div class="row">
         <div class="timeline">
           <div class="outer">
@@ -35,19 +51,26 @@
             <div class="card">
               <div class="info">
                 <h3 class="title">Future</h3>
-                <p>I am just at the beginning of my wonderful Journey of life. I completed the standard education and now
+                <p>I am just at the beginning of my wonderful Journey of life. I completed the standard education and
+                  now
                   my Path is unique and
-                  full of possibilities. It isn't possible to always make the right choice, but I hope I find a place in
+                  full of possibilities. It isn't possible to always make the right choice, but I hope I find a place
+                  in
                   this huge World, which
                   I enjoy living, so I don't have to regret anything.
                 </p>
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
-    <img src="/public/personal-transparent.png">
+    <div class="shadow">
+      <div class="picturecard">
+        <div class="shape"/>
+        <img src="/public/personal-transparent.png">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -56,14 +79,61 @@
 
 
 
+
+
+
+
+
 @import '@/assets/base.css';
 
+ins {
+  text-decoration: none;
+}
 
 img {
-  border-radius: 20%;
-  height: 60%;
+  height: 100%;
+  position: absolute;
+}
+
+.shadow {
+  filter: drop-shadow(0px 15px 10px var(--color-accent-shadow));
+}
+
+.picturecard {
+  -webkit-clip-path:polygon(45% 89.2%, 47% 89.7%, 50% 90%, 53% 89.7%, 55% 89.2%,
+                            97% 69%, 98.6% 68%, 99.4% 67%, 99.8% 66%, 100% 65%,
+                            100% 0,
+                            0 0,
+                            0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
+  clip-path: polygon(45% 89.2%, 47% 89.7%, 50% 90%, 53% 89.7%, 55% 89.2%,
+                     97% 69%, 98.6% 68%, 99.4% 67%, 99.8% 66%, 100% 65%,
+                     100% 0,
+                     0 0,
+                     0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
+
   margin-top: 25%;
   margin-left: 35%;
+  width: 25vw;
+  height: 70vh;
+}
+
+.shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(45% 89.2%, 47% 89.7%, 50% 90%, 53% 89.7%, 55% 89.2%,
+      97% 69%, 98.6% 68%, 99.4% 67%, 99.8% 66%, 100% 65%,
+      100% 40%, 99.8% 39%, 99.4% 38%, 98.6% 37%, 97% 36%,
+      55% 15.8%, 53% 15.3%, 50% 15%, 47% 15.3%, 45% 15.8%,
+      3% 36%, 1.4% 37%, 0.6% 38%, 0.2% 39%, 0 40%,
+      0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
+  clip-path: polygon(45% 89.2%, 47% 89.7%, 50% 90%, 53% 89.7%, 55% 89.2%,
+      97% 69%, 98.6% 68%, 99.4% 67%, 99.8% 66%, 100% 65%,
+      100% 40%, 99.8% 39%, 99.4% 38%, 98.6% 37%, 97% 36%,
+      55% 15.8%, 53% 15.3%, 50% 15%, 47% 15.3%, 45% 15.8%,
+      3% 36%, 1.4% 37%, 0.6% 38%, 0.2% 39%, 0 40%,
+      0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
+  background-color: var(--color-accent);
 }
 
 @media (min-width: 1024px) {
@@ -75,17 +145,19 @@ img {
 }
 
 .about-layout {
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.header {
+h1 {
   padding-top: 3%;
   margin-bottom: 2%;
+  font-size: 3rem;
 }
 
-.header2 {
-  padding-top: 1%;
+h2 {
+  padding-top: 7%;
   margin-bottom: 2%;
 }
 
@@ -140,8 +212,8 @@ img {
 /* Setting the border of top, bottom, right */
 .card:nth-child(even)::before {
   right: 0;
-  top: -0.5px;
-  bottom: 0;
+  top: 0;
+  bottom: -1px;
   border-width: 5px 5px 5px 0;
   border-radius: 0 50px 50px 0;
 }

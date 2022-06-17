@@ -18,6 +18,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 
+
+
 @import '@/assets/base.css';
 
 
@@ -30,6 +32,13 @@ import { RouterLink, RouterView } from 'vue-router'
     flex-wrap: wrap;
     align-content: center;
     z-index: 1;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .sidebar a {

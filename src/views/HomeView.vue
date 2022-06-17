@@ -16,6 +16,7 @@
 
 
 
+
 @import '@/assets/base.css';
 .home {
   padding-left: 50px;
@@ -33,6 +34,13 @@
   font-size: 6rem;
   color: rgb(68, 68, 68);
   transition: 0.7s ease-out;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .glow:hover {

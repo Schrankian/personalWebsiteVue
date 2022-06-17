@@ -147,7 +147,7 @@
         </li>
         <li>
           <p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the
-            purchase contract for the products, items or services You have purchased or of any other contract with Us
+            purchase contract for the products, items or services You have purchased or of any other contract with Me
             through the Service.</p>
         </li>
         <li>
@@ -169,11 +169,12 @@
       <ul>
         <li><strong>With Service Providers:</strong> I may share Your personal information with Service Providers to
           monitor and analyze the use of my Service, to contact You.</li>
-        <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public
+        <!-- <li><strong>With other users:</strong> when You share personal information or otherwise interact in the
+          public
           areas with other users, such information may be viewed by all users and may be publicly distributed outside.
-        </li>
-        <li><strong>With Your consent</strong>: I may disclose Your personal information for any other purpose with
-          Your consent.</li>
+          </li> -->
+          <li><strong>With Your consent</strong>: I may disclose Your personal information for any other purpose with
+            Your consent.</li>
       </ul>
       <h2>Retention of Your Personal Data</h2>
       <p>I will retain Your Personal Data only for as long as is necessary for the purposes set out in this
@@ -268,6 +269,11 @@
 
 a {
   color: var(--color-text);
+  transition: 0.2s;
+}
+
+a:hover {
+  color: white;
 }
 
 strong {

@@ -11,6 +11,7 @@
     --color-text: rgba(235, 235, 235, 0.842);
 
     --color-accent: rgb(59, 92, 236);
+    --color-accent-shadow: rgba(59, 92, 236, 0.35);
 }
 
 *,
@@ -42,7 +43,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background: var(--color-background);
   border-radius: 4px;
 }
 
@@ -50,9 +51,23 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
+  transition: 0.2s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/*
+::-moz-selection {
+  color: var(--color-accent);
+  background: var(--color-accent-background);
+}
+
+::selection {
+  color: var(--color-accent);
+  background: var(--color-accent-background);
+}
+*/
+

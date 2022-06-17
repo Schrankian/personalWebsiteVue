@@ -12,6 +12,7 @@
 <style scoped>
 
 
+@import '@/assets/base.css';
 
 @media (min-width: 1024px) {
   .display {
@@ -32,9 +33,9 @@
   height: 200px;
   flex-direction: column;
   width: 85%;
-  border: 1px solid white;
   border-radius: 12px;
   margin-bottom: 60px;
+  background-color: var(--color-background-soft);
 }
 
 .heading {

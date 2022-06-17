@@ -1,7 +1,7 @@
 /* semantic color variables for this project */
 :root {
   --color-background: #181818;
-    --color-background-soft: #222222;
+    --color-background-soft: #414141;
     --color-background-mute: #6b6b6b;
   
     --color-border: rgba(84, 84, 84, 0.48);
@@ -10,8 +10,10 @@
     --color-heading: rgba(235, 235, 235, 0.932);
     --color-text: rgba(235, 235, 235, 0.842);
 
-    --color-accent: rgb(59, 92, 236);
-    --color-accent-shadow: rgba(59, 92, 236, 0.35);
+    --color-accent: rgb(63, 185, 32);
+    --color-accent-shadow: rgba(63,
+      185,
+      32, 0.35);
 }
 
 *,
@@ -57,6 +59,10 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
 }
 
 /*

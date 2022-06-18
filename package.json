@@ -9,6 +9,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "vue": "^3.2.36",
     "vue-router": "^4.0.15"
   },

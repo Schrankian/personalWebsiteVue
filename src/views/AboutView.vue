@@ -38,7 +38,7 @@ onMounted(() => {
             <div class="card">
               <div class="info">
                 <h3 class="title">2022</h3>
-                <p>I finished the Abitur at "Julius Ambrosius Hülße Gymnasium" with the final grade of 0.0 <br>
+                <p>I finished the Abitur at "Julius Ambrosius Hülße Gymnasium" with the final grade of 1.6 <br>
                   (Abitur is equivalent to A-level)</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ onMounted(() => {
               <div class="info">
                 <h3 class="title">2022-Now</h3>
                 <p>I started a dual study in Dresden, where I study at the "Berufsakademie" in Dresden and work at a
-                  company called "Spektra"</p>
+                  company called "SPEKTRA Schwingungstechnik und Akustik GmbH"</p>
               </div>
             </div>
             <div class="card">
@@ -68,7 +68,7 @@ onMounted(() => {
     </div>
     <div class="shadow">
       <div class="picturecard">
-        <div class="shape"/>
+        <div class="shape" />
         <img src="/public/personal-transparent.png">
       </div>
     </div>
@@ -76,6 +76,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+
+
 
 
 
@@ -97,7 +100,7 @@ img {
 }
 
 .shadow {
-  filter: drop-shadow(0px 15px 10px var(--color-accent-shadow));
+  filter: drop-shadow(0px 15px 10px rgba(var(--color-accent-shadow), 0.35));
 }
 
 .picturecard {
@@ -112,10 +115,8 @@ img {
                      0 0,
                      0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
 
-  margin-top: 25%;
-  margin-left: 35%;
-  width: 25vw;
-  height: 70vh;
+  width: 480px;
+  height: 663px;
 }
 
 .shape {
@@ -143,10 +144,18 @@ img {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
   }
+
+    .picturecard {
+      margin-top: 25%;
+      margin-left: 35%;
+    }
+
+        .about-layout {
+          padding-left: 30px;
+        }
 }
 
 .about-layout {
-  padding-left: 30px;
   display: flex;
   flex-direction: column;
 }

@@ -11,9 +11,7 @@
     --color-text: rgba(235, 235, 235, 0.842);
 
     --color-accent: rgb(63, 185, 32);
-    --color-accent-shadow: rgba(63,
-      185,
-      32, 0.35);
+    --color-accent-shadow: 63, 185, 32;
 }
 
 *,
@@ -65,15 +63,12 @@ body {
   background: var(--color-background);
 }
 
-/*
 ::-moz-selection {
-  color: var(--color-accent);
-  background: var(--color-accent-background);
+  background-color: rgba(var(--color-accent-shadow), 0.5);
 }
 
 ::selection {
-  color: var(--color-accent);
-  background: var(--color-accent-background);
+  background-color: rgba(var(--color-accent-shadow), 0.5);
 }
-*/
+
 

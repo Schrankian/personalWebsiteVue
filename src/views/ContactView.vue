@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
       <p>You want to contact me? <br> Simply write an email to <a
           href="mailto: contact@fabianschuster.net">contact@fabianschuster.net</a> or
-        use the contact form on the right.</p>
+        use the contact form.</p>
       <RouterLink class="app-contact" to="/privacy-policy">Privacy Policy</RouterLink>
     </div>
     <div class="contact-body-item right">

@@ -5,8 +5,8 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div class="sidebar">
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/projects">Projects</RouterLink>
     <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/projects">Projects</RouterLink>
     <RouterLink to="/contact">Contact</RouterLink>
   </div>
   <RouterView />
@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 <style>
+
 
 
 
@@ -50,7 +51,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
   .sidebar a:hover {
     color: var(--color-accent);
-    padding-left: 50px;
   }
 
 .sidebar a.router-link-exact-active {
@@ -77,5 +77,10 @@ import { RouterLink, RouterView } from 'vue-router'
     top: 0;
     left: 0;
   }
+
+    .sidebar a:hover {
+      padding-left: 50px;
+    }
+
 }
 </style>

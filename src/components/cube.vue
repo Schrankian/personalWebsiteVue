@@ -3,7 +3,7 @@ defineProps<{
     r?: number;
     g?: number;
     b?: number;
-    count?: String;
+    text?: String;
 }>()
 </script>
 
@@ -16,20 +16,20 @@ defineProps<{
         </div>
         <div>
             <span style="--i:0;">
-                <h2>{{ count }}</h2>
-                <h2>{{ count }}</h2>
+                <h2>{{ text }}</h2>
+                <h2>{{ text }}</h2>
             </span>
             <span style="--i:1;">
-                <h2>{{ count }}</h2>
-                <h2>{{ count }}</h2>
+                <h2>{{ text }}</h2>
+                <h2>{{ text }}</h2>
             </span>
             <span style="--i:2;">
-                <h2>{{ count }}</h2>
-                <h2>{{ count }}</h2>
+                <h2>{{ text }}</h2>
+                <h2>{{ text }}</h2>
             </span>
             <span style="--i:3;">
-                <h2>{{ count }}</h2>
-                <h2>{{ count }}</h2>
+                <h2>{{ text }}</h2>
+                <h2>{{ text }}</h2>
             </span>
         </div>
     </div>
@@ -91,7 +91,7 @@ defineProps<{
 
 .cube div span h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 10em;
+    font-size: 5.5em;
     position: absolute;
     transform: translateZ(50px);
     user-select: none;
@@ -99,7 +99,7 @@ defineProps<{
 
 .cube div span h2:nth-child(1) {
     transform: translateZ(0px) translateY(20px);
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.17);
     filter: blur(5px);
 }
 .top {

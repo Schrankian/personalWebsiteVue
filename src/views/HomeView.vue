@@ -1,4 +1,7 @@
 <script setup lang="ts">
+
+import { RouterLink, RouterView } from 'vue-router'
+
 import Cube from '../components/cube.vue'
 
 window.onscroll = function  () {
@@ -28,7 +31,7 @@ window.onscroll = function  () {
     <div class="main-space" id="section">
       <div class="row">
         <div class="texts">
-          <h1>Demo Text</h1>
+          <h1>About Me</h1>
           <p>Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
             . Demo text. Demo
             text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
@@ -36,99 +39,43 @@ window.onscroll = function  () {
             Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
             text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
             . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
+            Demo text. Demo text. Demo text. Demo text. Demo text. Dem o text. Demo text. Demo
             text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
             . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
           </p>
+          <RouterLink to="/about">Discover more ➜</RouterLink>
         </div>
         <div class="cubes">
-          <Cube :r="63" :g="210" :b="32" count="01" />
+          <Cube :r="63" :g="210" :b="32" text="About" />
         </div>
       </div>
       <div class="row">
         <div class="texts">
-          <h1>Demo Text</h1>
-          <p>Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
+          <h1 id="project">My Projects</h1>
+          <p id="project">
+            I work on some small projects outside of school, because I really like the possibilities which programming
+            gives me. It all started with small programs for my Calculator, but quickly developed to mobile- and
+            web-development. I'm not quite skilled enough to code really mindblowing applications, but I gathered some
+            experience along the way, which keeps adding to my knowledge and enables me to code even better ideas into
+            fully functional programs. Want to learn more about my best projects?
           </p>
+          <RouterLink to="/projects" id="project">Discover more ➜</RouterLink>
         </div>
         <div class="cubes">
-          <Cube :r="199" :g="36" :b="177" count="02" />
+          <Cube :r="199" :g="36" :b="177" text="Projects" />
         </div>
       </div>
       <div class="row">
         <div class="texts">
-          <h1>Demo Text</h1>
-          <p>Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
+          <h1 id="contact">Contact Me</h1>
+          <p id="contact">
+            You want to get in touch with me, have an interesting project idea or just want to tell me something? Feel free to contact me and be sure that
+            I at least read your message.
           </p>
+          <RouterLink to="/contact" id="contact">Contact me ➜</RouterLink>
         </div>
         <div class="cubes">
-          <Cube :r="255" :g="173" :b="0" count="03" />
+          <Cube :r="255" :g="173" :b="0" text="Contact" />
         </div>
       </div>
     </div>
@@ -137,6 +84,12 @@ window.onscroll = function  () {
 </template>
 
 <style scoped>
+
+
+
+
+
+
 
 
 
@@ -268,21 +221,50 @@ window.onscroll = function  () {
   font-size: 6rem;
   font-weight: bold;
   color: var(--color-heading);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .texts p {
-  font-size: 1rem;
-  margin-bottom: 200px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
+
+.texts a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1.5em;
+  transition: 0.4s;
+}
+
+.texts a:hover {
+  margin-left: 20px;
+}
+
+.texts #project::-moz-selection {
+  background-color: rgba(var(--color-2), 0.5) !important; 
+}
+
+.texts #project::selection {
+  background-color: rgba(var(--color-2), 0.5) !important;
+}
+
+.texts #contact::-moz-selection {
+  background-color: rgba(var(--color-3), 0.5) !important;
+}
+
+.texts #contact::selection {
+  background-color: rgba(var(--color-3), 0.5) !important;
+}
+
 
 .cubes {
   padding-left: 25%;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
 }
 
 .texts {
   padding: 0 7%;
+  margin-bottom: 300px;
 }
 
 @media (min-width: 1024px) {

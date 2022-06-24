@@ -16,8 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink class="app-contact" to="/privacy-policy">Privacy Policy</RouterLink>
     </div>
     <div class="contact-body-item right">
-      <!--<ContactformVue />-->
-      <p style="color: rgb(255,100,50);">Contact form is currently unavailable. Please use the email adress to contact me.</p>
+      <ContactformVue />
     </div>
   </div>
 

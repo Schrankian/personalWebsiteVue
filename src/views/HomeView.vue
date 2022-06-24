@@ -32,16 +32,17 @@ window.onscroll = function  () {
       <div class="row">
         <div class="texts">
           <h1>About Me</h1>
-          <p>Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
-            Demo text. Demo text. Demo text. Demo text. Demo text. Dem o text. Demo text. Demo
-            text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text
-            . Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.
+          <p>
+            Hey there, my name is Fabian Schuster. I'm a student who enjoys every aspect of coding! One day I was
+            sitting bored in my math class in front of my graphics-calculator and thought "hmmm it would be cool to code
+            my own program for it". So I read through the user manual and after a few hours I had my own first program
+            and thought "this was fun". Ever since that day, I have worked on different projects which only improved my
+            love for coding and gave me valuable experience which will be useful for future projects. All this leads to
+            my dual study of computer science, which I am currently attempting. <br/>
+            I really enjoy the easy times of coding, where the solution is always straight forward, but I also love the
+            times when I really have no idea and struggle to find a solution to my problem. There is just something
+            about it, When you finally find a solution to that problem, sit back and look at the finished work,
+            remembering the work which led to this outcome.
           </p>
           <RouterLink to="/about">Discover more ➜</RouterLink>
         </div>
@@ -69,7 +70,8 @@ window.onscroll = function  () {
         <div class="texts">
           <h1 id="contact">Contact Me</h1>
           <p id="contact">
-            You want to get in touch with me, have an interesting project idea or just want to tell me something? Feel free to contact me and be sure that
+            You want to get in touch with me, have an interesting project idea or just want to tell me something? Feel
+            free to contact me and be sure that
             I at least read your message.
           </p>
           <RouterLink to="/contact" id="contact">Contact me ➜</RouterLink>

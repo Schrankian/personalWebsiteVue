@@ -4,7 +4,7 @@
   "compilerOptions": {
     "preserveValueImports":false,
     "isolatedModules": false,
-    "importsNotUsedAsValues": "remove",
+    "importsNotUsedAsValues": "preserve",
     "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {

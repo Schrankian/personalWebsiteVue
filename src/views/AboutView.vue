@@ -81,7 +81,7 @@ onMounted(() => {
     <div class="shadow">
       <div class="picturecard">
         <div class="shape" />
-        <img src="/public/personal-transparent.png">
+        <img src="/personal-transparent.png">
       </div>
     </div>
   </div>

@@ -1,16 +1,8 @@
 <script setup lang="ts">
 
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 import Cube from '../components/cube.vue'
-
-window.onscroll = function  () {
-  if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-    document.getElementById("drop1")!.setAttribute("style", "position: fixed; top: 5vh; right: -14vw;");
-  }else{  
-    document.getElementById("drop1")!.setAttribute("style", "position: absolut; top: 5vh; right: -14vw;");
-  }
-}
 
 </script>
 
@@ -227,7 +219,7 @@ window.onscroll = function  () {
 }
 
 .texts p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-bottom: 20px;
 }
 
@@ -283,6 +275,7 @@ window.onscroll = function  () {
     margin-left: 250px;
     padding-right: 100px;
     padding-top: 240px;
+    margin-bottom: 320px;
   }
 
   .texts {

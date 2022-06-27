@@ -9,6 +9,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.7",
     "vue": "^3.2.36",
     "vue-router": "^4.0.15"
   },

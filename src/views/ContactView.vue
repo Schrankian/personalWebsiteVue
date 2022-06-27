@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink class="app-contact" to="/privacy-policy">Privacy Policy</RouterLink>
     </div>
     <div class="contact-body-item right">
-      
+      <ContactformVue />
     </div>
   </div>
 

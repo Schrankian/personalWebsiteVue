@@ -19,19 +19,40 @@ onMounted(() => {
     <div class="about-layout">
       <h1>Hey, I'm Fabian Schuster</h1>
       <p>
-        Hey there, my name is Fabian Schuster. I'm an <ins id="output">18</ins>-year-old enthusiastic student who
+        I'm an <ins id="output">18</ins>-year-old enthusiastic student who
         enjoys every aspect of coding! One day I was
         sitting bored in my math class in front of my graphics-calculator and thought "hmmm it would be cool to code
         my own program for it". So I read through the user manual and after a few hours I had my own first program
-        and thought "this was fun". Ever since that day, I have worked on different projects which only improved my
+        and thought "this was fun!". Ever since that day, I have worked on different projects which only improved my
         love for coding and gave me valuable experience which will be useful for future projects. All this leads to
-        my dual study of computer science, which I am currently attempting. <br />
+        my dual study of computer science, which i am currently attending. <br />
         I really enjoy the easy times of coding, where the solution is always straight forward, but I also love the
         times when I really have no idea and struggle to find a solution to my problem. There is just something
         about it, When you finally find a solution to that problem, sit back and look at the finished work,
         remembering the work which led to this outcome.
       </p>
-      <h2>Path of Education:</h2>
+      <h2>My Skills:</h2>
+      <div class="skills">
+        <div class="col">
+          <h3>Languages</h3>
+          <div class="ps">
+            <p>JavaScript</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>Dart</p>
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="divider" />
+        <div class="col">
+          <h3>Frameworks</h3>
+          <div class="ps">
+            <p>Vue.js</p>
+            <p>flutter</p>
+          </div>
+        </div>
+      </div>
+      <h2>My Path of Education:</h2>
       <div class="row">
         <div class="timeline">
           <div class="outer">
@@ -88,6 +109,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+
+
+
 
 
 
@@ -180,11 +205,17 @@ h1 {
   padding-top: 3%;
   margin-bottom: 2%;
   font-size: 3rem;
+  color: var(--color-heading);
+}
+
+.about-layout p {
+  padding-left: 2%;
+  font-size: 1.1em;
 }
 
 h2 {
   padding-top: 7%;
-  margin-bottom: 2%;
+  margin-bottom: 6%;
 }
 
 .row {
@@ -303,4 +334,49 @@ h2 {
 .card:nth-child(even)>.info>.title::before {
   right: -47px;
 }
+
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col h3 {
+  margin-bottom: 20px;
+  font-weight: 650;
+  font-size: 1.3em;
+}
+
+.ps p {
+  margin-bottom: 10px;
+}
+
+/*.ps p::before {
+  content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+    top: 17px;
+    left: -15px;
+}
+*/
+
+.divider{
+  content: '';
+  display: block;
+  width: 0.7px;
+  height: 100%;
+  background: white;
+  border-radius: 100px;
+}
+
 </style>

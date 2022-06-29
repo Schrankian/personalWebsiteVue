@@ -59,7 +59,7 @@ export default defineComponent({
             <p>This is my first mobile project which I finished. Originally I developed it for mobile, but thanks to
               Flutter, I'm able to provide an online version on my website (Please keep in mind that it's originally
               developed for mobile, so it might not be fully responsive). Even though this was my first finished Project
-              with Flutter, I had already used Flutter in other unfinished Projects, so I had a little bit of experience
+              with Flutter, I already used Flutter in other unfinished Projects, so I had a little bit of experience
               which helped me a lot while coding it.
             </p>
             <div class="buttons">
@@ -69,18 +69,42 @@ export default defineComponent({
           </div>
         </SplideSlide>
         <SplideSlide>
-          <div class="project-box">
+          <div class="project-box" id="website-portfolio">
             <h1>Website Portfolio</h1>
+            <div class="image-box">
+              <img src="/website/website_home.JPG">
+            </div>
+            <p>And of course this website, which introduced me to web development. Because it was the first time I
+              developed for web, it was quite a
+              difficult task, but I was able to gather a lot of knowledge along the way.
+            </p>
+            <div class="buttons">
+              <a id="code" href="https://github.com/Schrankian/" target="_blank">Code</a>
+            </div>
           </div>
         </SplideSlide>
         <SplideSlide>
-          <div class="project-box">
-            <h1>4-Wins for Calculator</h1>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div class="project-box">
-            <h1>Demo Project 4</h1>
+          <div class="project-box" id="connect-four">
+            <h1>Connect four for Calculator</h1>
+            <div class="image-box">
+              <img src="/connect-four/game_init_1.jpeg">
+              <img src="/connect-four/game_progress_1.jpeg">
+              <img src="/connect-four/game_win_1.jpeg">
+            </div>
+            <p>
+              This is my first ever project which is worth mentioning. It was quite a struggle to code something on a
+              calculator, espacialy if there are
+              nearly no tutorials. But somehow I got it working. I didn't want to use the programming language inside
+              the Calculator, because it's really
+              simple and full of bugs. That's why I decided to use the advanced Casio SDK for my project (which wasn't
+              easy to find and understand). Another unfortunate thing
+              was, that I had to Code it in C, which I never used before, so I had to learn it. As this was my first
+              project, the code isn't very organized but
+              it worked which is pretty awesome.
+            </p>
+            <div class="buttons">
+              <a id="code" href="https://github.com/Schrankian/connect-four" target="_blank">Code</a>
+            </div>
           </div>
         </SplideSlide>
       </SplideTrack>
@@ -91,11 +115,6 @@ export default defineComponent({
 
 
 <style scoped>
-
-
-
-
-
 
 
 
@@ -159,8 +178,8 @@ export default defineComponent({
 }
 
 .project-box p {
-  padding-left: 47px;
-  padding-right: 47px;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: 1.3em;
 }
 
@@ -191,16 +210,13 @@ export default defineComponent({
 
 .image-box {
   width: 100%;
-  height: 45%;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   flex-direction: row;
   margin-bottom: 5%;
 }
 
 .image-box img {
-  margin-left: 2%;
-  margin-right: 2%;
   border: solid 2px grey;
 }
 
@@ -216,6 +232,44 @@ export default defineComponent({
 #wordle-clone::-webkit-scrollbar-track {
   background: #303030;
   border-radius: 8px;
+}
+
+#wordle-clone img{
+  width: 17%;
+}
+
+#website-portfolio {
+  background-color: var(--color-background-soft);
+}
+
+#website-portfolio h1 {
+  color: #F8F8F8;
+}
+
+#website-portfolio img {
+  width: 70%;
+}
+
+#website-portfolio::-webkit-scrollbar-track {
+  background: var(--color-background-soft);
+  border-radius: 8px;
+}
+
+#connect-four {
+  background-color: var(--color-background-soft);
+}
+
+#connect-four h1 {
+  color: #F8F8F8;
+}
+
+#connect-four::-webkit-scrollbar-track {
+  background: var(--color-background-soft);
+  border-radius: 8px;
+}
+
+#connect-four img {
+  width: 27%;
 }
 
 </style>

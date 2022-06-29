@@ -28,9 +28,9 @@ import Cube from '../components/cube.vue'
             Hey there, my name is Fabian Schuster. I'm a student who enjoys every aspect of coding! One day I was
             sitting bored in my math class in front of my graphics-calculator and thought "hmmm it would be cool to code
             my own program for it". So I read through the user manual and after a few hours I had my own first program
-            and thought "this was fun". Ever since that day, I have worked on different projects which only improved my
+            and thought "this was fun!". Ever since that day, I have worked on different projects which only improved my
             love for coding and gave me valuable experience which will be useful for future projects. All this leads to
-            my dual study of computer science, which I am currently attempting. <br/>
+            my dual study of computer science, which i am currently attending. <br />
             I really enjoy the easy times of coding, where the solution is always straight forward, but I also love the
             times when I really have no idea and struggle to find a solution to my problem. There is just something
             about it, When you finally find a solution to that problem, sit back and look at the finished work,
@@ -78,20 +78,6 @@ import Cube from '../components/cube.vue'
 </template>
 
 <style scoped>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

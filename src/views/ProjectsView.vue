@@ -65,6 +65,21 @@ export default defineComponent({
             <div class="buttons">
               <RouterLink to="/projects/wordle">Try the Demo</RouterLink>
               <!--<a id="code" href="https://www.github.com/">Code</a>-->
+              <div class="skills">
+                <div class="col">
+                  <h3>Language</h3>
+                  <div class="ps">
+                    <p>Dart</p>
+                  </div>
+                </div>
+                <div class="divider" />
+                <div class="col">
+                  <h3>Framework</h3>
+                  <div class="ps">
+                    <p>Flutter</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </SplideSlide>
@@ -79,7 +94,24 @@ export default defineComponent({
               difficult task, but I was able to gather a lot of knowledge along the way.
             </p>
             <div class="buttons">
-              <a id="code" href="https://github.com/Schrankian/" target="_blank">Code</a>
+              <a id="code" href="https://github.com/Schrankian/personalWebsiteVue" target="_blank">Code</a>
+              <div class="skills">
+                <div class="col">
+                  <h3>Languages</h3>
+                  <div class="ps">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>TypeScript</p>
+                  </div>
+                </div>
+                <div class="divider" />
+                <div class="col">
+                  <h3>Framework</h3>
+                  <div class="ps">
+                    <p>Vue.js</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </SplideSlide>
@@ -104,6 +136,21 @@ export default defineComponent({
             </p>
             <div class="buttons">
               <a id="code" href="https://github.com/Schrankian/connect-four" target="_blank">Code</a>
+              <div class="skills">
+                <div class="col">
+                  <h3>Languages</h3>
+                  <div class="ps">
+                    <p>C</p>
+                  </div>
+                </div>
+                <div class="divider" />
+                <div class="col">
+                  <h3>SDK</h3>
+                  <div class="ps">
+                    <p>fx-9860G Casio SDK</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </SplideSlide>
@@ -115,6 +162,9 @@ export default defineComponent({
 
 
 <style scoped>
+
+
+
 
 
 
@@ -184,23 +234,25 @@ export default defineComponent({
 }
 
 .buttons {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 12%;
+  margin-top: 3%;
+  padding-left: 12%;
+  padding-right: 12%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: left;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .buttons a {
-  margin-right: 70px;
+  margin-right: 5%;
   padding: 15px;
   text-decoration: none;
   background-color: grey;
   border-radius: 5px;
   font-size: 1.5em;
   color: white;
+  height: fit-content;
 }
 
 #code{
@@ -247,7 +299,7 @@ export default defineComponent({
 }
 
 #website-portfolio img {
-  width: 70%;
+  width: 65%;
 }
 
 #website-portfolio::-webkit-scrollbar-track {
@@ -270,6 +322,37 @@ export default defineComponent({
 
 #connect-four img {
   width: 27%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col h3 {
+  margin-bottom: 20px;
+  font-weight: 650;
+  font-size: 1.3em;
+}
+
+.ps p {
+  margin-bottom: 10px;
+  width: 120%;
+}
+
+.divider {
+  display: block;
+  width: 0.7px;
+  background: white;
+  border-radius: 100px;
 }
 
 </style>

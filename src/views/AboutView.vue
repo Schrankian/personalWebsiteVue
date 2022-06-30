@@ -36,7 +36,7 @@ onMounted(() => {
         <div class="col">
           <h3>Languages</h3>
           <div class="ps">
-            <p>JavaScript</p>
+            <p>TypeScript</p>
             <p>HTML5</p>
             <p>CSS3</p>
             <p>Dart</p>
@@ -371,7 +371,6 @@ h2 {
 */
 
 .divider{
-  content: '';
   display: block;
   width: 0.7px;
   height: 100%;

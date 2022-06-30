@@ -36,11 +36,12 @@ onMounted(() => {
         <div class="col">
           <h3>Languages</h3>
           <div class="ps">
+            <p>Dart</p>
+            <p>Java</p>
+            <p>Python</p>
             <p>TypeScript</p>
             <p>HTML5</p>
             <p>CSS3</p>
-            <p>Dart</p>
-            <p>Java</p>
           </div>
         </div>
         <div class="divider" />
@@ -48,7 +49,14 @@ onMounted(() => {
           <h3>Frameworks</h3>
           <div class="ps">
             <p>Vue.js</p>
-            <p>flutter</p>
+            <p>Flutter</p>
+          </div>
+        </div>
+        <div class="divider" />
+        <div class="col">
+          <h3>Other</h3>
+          <div class="ps">
+            <p>Git</p>
           </div>
         </div>
       </div>

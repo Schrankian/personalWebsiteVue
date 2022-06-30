@@ -87,7 +87,7 @@ export default defineComponent({
           <div class="project-box" id="website-portfolio">
             <h1>Website Portfolio</h1>
             <div class="image-box">
-              <img src="/website/website_home.JPG">
+              <img src="/website/website_home.jpeg">
             </div>
             <p>And of course this website, which introduced me to web development. Because it was the first time I
               developed for web, it was quite a

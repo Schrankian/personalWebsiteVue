@@ -12,14 +12,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-
 <style>
-
-
-
-
 @import '@/assets/base.css';
-
 
 .sidebar {
     display: flex;
@@ -40,10 +34,9 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .sidebar a {
-    padding-top: 20px;
-    padding-left: 30px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--color-text);
     display: block;
     transition: 0.3s;
@@ -56,11 +49,6 @@ import { RouterLink, RouterView } from 'vue-router'
 .sidebar a.router-link-exact-active {
   color: var(--color-accent);
 }
-
-
-
-
-
 
 @media (min-width: 1024px) {
 
@@ -78,9 +66,17 @@ import { RouterLink, RouterView } from 'vue-router'
     left: 0;
   }
 
-    .sidebar a:hover {
-      padding-left: 50px;
-    }
+  .sidebar a {
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    padding-left: 50px;
+  }
 
 }
 </style>

@@ -2,7 +2,6 @@
 import '@splidejs/vue-splide/css/sea-green';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide'
 import { defineComponent} from 'vue';
-import { RouterLink } from 'vue-router'
 
 export default defineComponent({
   name: 'Projects',
@@ -31,8 +30,6 @@ export default defineComponent({
 });
 </script>
 
-
-
 <template>
   <div class="wrapper">
     <Splide aria-labelledby="project-slider" :options="options" :has-track="false">
@@ -56,15 +53,19 @@ export default defineComponent({
               <img src="/wordle/settings.jpeg">
               <img src="/wordle/stats.jpeg">
             </div>
-            <p>This is my first mobile project which I finished. Originally I developed it for mobile, but thanks to
+            <!--<p>This is my first mobile project which I finished. Originally I developed it for mobile, but thanks to
               Flutter, I'm able to provide an online version on my website (Please keep in mind that it's originally
               developed for mobile, so it might not be fully responsive). Even though this was my first finished Project
               with Flutter, I already used Flutter in other unfinished Projects, so I had a little bit of experience
               which helped me a lot while coding it.
+            </p>-->
+            <p>This is my first mobile project which I finished. Even though this was my first finished Project
+              with Flutter, I already used Flutter in other unfinished Projects, so I had a little bit of experience
+              which helped me a lot while coding it.
             </p>
             <div class="buttons">
-              <RouterLink to="/projects/wordle">Try the Demo</RouterLink>
-              <!--<a id="code" href="https://www.github.com/">Code</a>-->
+              <!--<RouterLink to="/projects/wordle">Try the Demo</RouterLink>-->
+              <a id="code" href="https://github.com/Schrankian/wordle-clone" target="_blank">Code</a>
               <div class="skills">
                 <div class="col">
                   <h3>Language</h3>
@@ -89,8 +90,9 @@ export default defineComponent({
             <div class="image-box">
               <img src="/website/website_home.jpeg">
             </div>
-            <p>And of course this website, which introduced me to web development. Because it was the first time I
-              developed for web, it was quite a
+            <p>This website is also an very important project, because it introduced me to web development. It was the
+              first time I
+              developed for web, so it was quite a
               difficult task, but I was able to gather a lot of knowledge along the way.
             </p>
             <div class="buttons">
@@ -160,15 +162,7 @@ export default defineComponent({
   </div>
 </template>
 
-
 <style scoped>
-
-
-
-
-
-
-
 .splide__arrow {
   position: absolute;
   top: 45vh;
@@ -202,13 +196,6 @@ export default defineComponent({
   width: 98vw;
 }
 
-@media (min-width: 1024px){
-  .wrapper {
-      padding-left: 250px;
-    }
-}
-
-
 .project-box {
   display: flex;
   flex-direction: column;
@@ -223,6 +210,7 @@ export default defineComponent({
 
 .project-box h1 {
   padding-top: 1%;
+  padding-left: 17%;
   font-size: 3.5rem;
   margin-bottom: 2%;
 }
@@ -234,18 +222,18 @@ export default defineComponent({
 }
 
 .buttons {
-  margin-top: 3%;
-  padding-left: 12%;
-  padding-right: 12%;
+  margin-top: 7%;
+  margin-bottom: 10%;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .buttons a {
   margin-right: 5%;
+  margin-bottom: 10%;
   padding: 15px;
   text-decoration: none;
   background-color: grey;
@@ -264,12 +252,14 @@ export default defineComponent({
   width: 100%;
   display: flex;
   justify-content:space-evenly;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 5%;
 }
 
 .image-box img {
   border: solid 2px grey;
+  margin-bottom: 30px;
 }
 
 
@@ -287,7 +277,7 @@ export default defineComponent({
 }
 
 #wordle-clone img{
-  width: 17%;
+  width: 80%;
 }
 
 #website-portfolio {
@@ -299,7 +289,7 @@ export default defineComponent({
 }
 
 #website-portfolio img {
-  width: 65%;
+  width: 85%;
 }
 
 #website-portfolio::-webkit-scrollbar-track {
@@ -321,14 +311,14 @@ export default defineComponent({
 }
 
 #connect-four img {
-  width: 27%;
+  width: 75%;
 }
 
 .skills {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
 }
 
 .col {
@@ -355,4 +345,50 @@ export default defineComponent({
   border-radius: 100px;
 }
 
+@media (min-width: 1024px) {
+  .wrapper {
+    padding-left: 250px;
+  }
+
+  .project-box h1 {
+    padding-left: 0;
+  }
+
+  .buttons {
+    margin-top: 3%;
+    margin-bottom: 0;
+    padding-left: 12%;
+    padding-right: 12%;
+    flex-direction: row;
+  }
+
+  .buttons a {
+    margin-bottom: 0;
+  }
+
+  .skills {
+    width: 70%;
+  }
+
+  .image-box {
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .image-box img {
+    margin-bottom: 0;
+  }
+
+  #wordle-clone img {
+    width: 17%;
+  }
+
+  #website-portfolio img {
+    width: 65%;
+  }
+
+  #connect-four img {
+    width: 27%;
+  }
+}
 </style>

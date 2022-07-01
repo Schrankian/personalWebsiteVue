@@ -2,14 +2,12 @@
 import Loader from '../components/loader.vue'
 </script>
 
-
 <template>
     <Loader/>
     <iframe src="/public/wordle/game/"></iframe>
 </template>
 
 <style scoped>
-
 iframe {
     position: fixed;
     overflow: hidden;
@@ -18,5 +16,4 @@ iframe {
     height: 100vh;
     border: none;
 }
-
 </style>

@@ -9,7 +9,6 @@
 </template>
 
 <style scoped>
-
 @import '@/assets/base.css';
 .loading {
     position: fixed;
@@ -90,5 +89,4 @@
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
 }
-
 </style>

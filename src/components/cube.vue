@@ -7,8 +7,6 @@ defineProps<{
 }>()
 </script>
 
-
-
 <template>
     <div class="cube">
         <div class="top">
@@ -38,14 +36,7 @@ defineProps<{
 
 
 <style scoped>
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-
 @import '@/assets/base.css';
 
 .cube{
@@ -129,5 +120,4 @@ defineProps<{
     0 0 400px rgba(v-bind(r), v-bind(g), v-bind(b),0.8),
     0 0 500px rgba(v-bind(r), v-bind(g), v-bind(b),1);
 }
-
 </style>

@@ -117,22 +117,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import '@/assets/base.css';
 
 ins {
@@ -142,10 +126,6 @@ ins {
 img {
   height: 100%;
   position: absolute;
-}
-
-.about-layout p {
-  max-width: 35vw;
 }
 
 .shadow {
@@ -164,8 +144,9 @@ img {
                      0 0,
                      0 65%, 0.2% 66%, 0.6% 67%, 1.4% 68%, 3% 69%);
 
-  width: 480px;
-  height: 663px;
+  width: 264px;
+  height: 364px;
+  margin-left: 14.7%;
 }
 
 .shape {
@@ -187,43 +168,27 @@ img {
   background-color: var(--color-accent);
 }
 
-@media (min-width: 1024px) {
-  .grid {
-    padding-left: 250px;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-  }
-
-    .picturecard {
-      margin-top: 25%;
-      margin-left: 35%;
-    }
-
-        .about-layout {
-          padding-left: 30px;
-        }
-}
-
 .about-layout {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 h1 {
   padding-top: 3%;
   margin-bottom: 2%;
-  font-size: 3rem;
+  font-size: 4.3em;
   color: var(--color-heading);
 }
 
 .about-layout p {
-  padding-left: 2%;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 h2 {
   padding-top: 7%;
   margin-bottom: 6%;
+  font-size: 2.5em;
 }
 
 .row {
@@ -232,20 +197,10 @@ h2 {
   padding-right: 8%;
 }
 
-.block {
-  width: 50%;
-}
-
 /* TIMELINE*/
-/* Timeline Container */
-.timeline {
-  padding: 20px;
-}
-
 /* Card container */
 .card {
   position: relative;
-  max-width: 35vw;
 }
 
 /* setting padding based on even or odd */
@@ -381,9 +336,63 @@ h2 {
 .divider{
   display: block;
   width: 0.7px;
-  height: 100%;
   background: white;
   border-radius: 100px;
 }
 
+@media (min-width: 1024px) {
+  .grid {
+    padding-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .picturecard {
+    margin-top: 25%;
+    margin-left: 35%;
+  }
+
+  .about-layout {
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  .about-layout p {
+    max-width: 35vw;
+  }
+
+  .picturecard {
+    width: 480px;
+    height: 663px;
+  }
+
+  .about-layout p {
+    padding-left: 2%;
+  }
+
+  .card {
+    max-width: 35vw;
+  }
+
+  .timeline {
+    padding: 20px;
+  }
+
+  h1 {
+    padding-top: 3%;
+    margin-bottom: 2%;
+    font-size: 3rem;
+    color: var(--color-heading);
+  }
+
+  .about-layout p {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    padding-top: 7%;
+    margin-bottom: 6%;
+    font-size: 1.7em;
+  }
+}
 </style>

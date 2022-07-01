@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ContactformVue from '../components/contactform.vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink} from 'vue-router'
 </script>
 
 <template>
@@ -29,30 +29,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import '@/assets/base.css';
 
 p {
   padding-top: 15%;
-  font-size: 25px;
+  font-size: 1.7em;
 }
 
 .mail {
@@ -64,19 +45,9 @@ p {
   color: grey;
 }
 
-@media (min-width: 1024px) {
-.contact-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-right: 5%;
-  padding-left: 250px;
-  height: 100%;
-}
-}
-
 .contact-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 30px;
 }
 
 .contact-body-item.left {
@@ -134,16 +105,8 @@ p {
   height: 90px;
   border-radius: 50%;
   background-color: rgb(211, 211, 211);
-  margin-right: 10%;
+  margin-right: 5%;
   transition: 0.2s;
-  box-shadow: 15px 15px 30px #111111,
-      -15px -15px 30px #1f1f1f;
-}
-
-.icon:hover{
-  background-color: var(--color-background);
-  box-shadow: inset 5px 5px 10px #0e0e0e,
-      inset -5px -5px 10px #222222;
 }
 
 #github {
@@ -184,5 +147,35 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 59px;
+}
+
+@media (min-width: 1024px) {
+  .contact-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 5%;
+    padding-left: 250px;
+    height: 100%;
+  }
+
+  .contact-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+
+  .icon-row {
+    padding-left: 5%;
+  }
+
+  .icon:hover {
+    background-color: var(--color-background);
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+      inset -5px -5px 10px #222222;
+  }
+
+  .icon {
+    box-shadow: 15px 15px 30px #111111,
+      -15px -15px 30px #1f1f1f;
+  }
 }
 </style>

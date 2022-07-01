@@ -1,11 +1,7 @@
 <script setup lang="ts">
-
 import { RouterLink } from 'vue-router'
-
 import Cube from '../components/cube.vue'
-
 </script>
-
 
 <template>
   <div class="home">
@@ -82,7 +78,11 @@ import Cube from '../components/cube.vue'
 
 
 
+
+
+
 @import '@/assets/base.css';
+
 .home {
   overflow-x: hidden;
   display: flex;
@@ -93,13 +93,11 @@ import Cube from '../components/cube.vue'
 }
 
 .glow {
-  margin-left: 50px;
   margin-top: 10vh;
-  height: 64vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 6rem;
+  font-size: 2.7rem;
   color: rgb(68, 68, 68);
   transition: 0.7s ease-out;
 
@@ -122,7 +120,7 @@ import Cube from '../components/cube.vue'
 .arrows {
   width: 60px;
   height: 8vh;
-  margin-top: 9vh;
+  margin-top: 20vh;
   margin-bottom: 9vh;
   cursor: pointer;
 }
@@ -196,12 +194,16 @@ import Cube from '../components/cube.vue'
   flex-direction: column;
 }
 
+.texts {
+  padding: 0 7%;
+  margin-bottom: 100px;
+}
 
 .texts h1 {
-  font-size: 6rem;
+  font-size: 6.5em;
   font-weight: bold;
   color: var(--color-heading);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .texts p {
@@ -221,33 +223,47 @@ import Cube from '../components/cube.vue'
 }
 
 .texts #project::-moz-selection {
-  background-color: rgba(var(--color-2), 0.5) !important; 
+  background-color: rgba(var(--color-2), 0.5); 
 }
 
 .texts #project::selection {
-  background-color: rgba(var(--color-2), 0.5) !important;
+  background-color: rgba(var(--color-2), 0.5);
 }
 
 .texts #contact::-moz-selection {
-  background-color: rgba(var(--color-3), 0.5) !important;
+  background-color: rgba(var(--color-3), 0.5);
 }
 
 .texts #contact::selection {
-  background-color: rgba(var(--color-3), 0.5) !important;
+  background-color: rgba(var(--color-3), 0.5);
 }
-
 
 .cubes {
   padding-left: 25%;
   margin-bottom: 250px;
 }
 
-.texts {
-  padding: 0 7%;
-  margin-bottom: 300px;
-}
-
 @media (min-width: 1024px) {
+  .glow {
+      margin-left: 50px;
+      margin-top: 10vh;
+      font-size: 6rem;
+      height: 64vh;
+    }
+
+  .arrows {
+    margin-top: 9vh;
+  }
+
+  .texts h1 {
+    margin-bottom: 50px;
+  }
+
+  .texts {
+    padding: 0 7%;
+    margin-bottom: 300px;
+  }
+
   .row {
       overflow: none;
       width: 100%;

@@ -247,14 +247,6 @@
 </template>
 
 <style scoped>
-
-
-
-
-
-
-
-
 @import '@/assets/base.css';
   .background {
     background-color: var(--color-background);
@@ -301,12 +293,6 @@ h3 {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1024px) {
-  .maintext {
-      padding: 0 100px;
-    }
-}
-
 .headline {
   font-size: 3.7em;
 }
@@ -316,18 +302,27 @@ h3 {
 }
 
 .back {
-  width: fit-content;
-  cursor: pointer;
-  padding-left: 50px;
-  padding-top: 20px;
-  font-size: 3rem;
-  font-weight: 50;
-  transition: 0.4s;
+  display: none;
 }
 
-.back:hover {
-  color: var(--color-accent);
+@media (min-width: 1024px) {
+  .maintext {
+    padding: 0 100px;
+  }
+
+  .back {
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 3rem;
+    font-weight: 50;
+    transition: 0.4s;
+  }
+
+  .back:hover {
+    color: var(--color-accent);
+  }
 }
-
-
 </style>

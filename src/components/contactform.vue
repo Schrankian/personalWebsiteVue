@@ -15,12 +15,6 @@
 </template>
 
 <style scoped>
-
-
-
-
-
-
 @import '@/assets/base.css';
 input {
     width: 100%;
@@ -32,6 +26,7 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    font-size: 1.1em;
 }
 
 input:focus {
@@ -51,6 +46,8 @@ textarea {
     margin: 17px 0;
     box-sizing: border-box;
     resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
 }
 
 textarea:focus {
@@ -61,8 +58,7 @@ textarea:focus {
 ::placeholder {
     color: white;
     opacity: 0.6;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-            Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 button[type=submit] {
@@ -78,7 +74,6 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    box-shadow: -5px 5px 15px var(--color-accent);
+    box-shadow: 0 5px 15px rgba(var(--color-accent-shadow), 0.5);
 }
-
 </style>

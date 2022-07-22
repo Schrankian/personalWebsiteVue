@@ -32,6 +32,11 @@ const router = createRouter({
       path: '/privacy-policy',
       name: 'privacy-policy',
       component: () => import('../views/Privacy-policyView.vue')
+    },
+    {
+      path: '/privacy-policy/debtify',
+      name: 'privacy-policy-debtify',
+      component: () => import('../views/Privacy-policyDebtifyView.vue')
     }
   ]
 })

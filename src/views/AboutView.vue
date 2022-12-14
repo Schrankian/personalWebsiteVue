@@ -37,11 +37,13 @@ onMounted(() => {
           <h3>Languages</h3>
           <div class="ps">
             <p>Dart</p>
-            <p>Java</p>
+            <p>C</p>
+            <p>C#</p>
             <p>Python</p>
-            <p>TypeScript</p>
+            <p>JavaScript</p>
             <p>HTML5</p>
             <p>CSS3</p>
+            <p>(Java)</p>
           </div>
         </div>
         <div class="divider" />

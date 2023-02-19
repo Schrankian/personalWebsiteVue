@@ -90,6 +90,7 @@ import Cube from '../components/cube.vue'
   width: 98.9vw;
   min-height: 100vh;
   align-items: center;
+  scroll-behavior: smooth;
 }
 
 .glow {

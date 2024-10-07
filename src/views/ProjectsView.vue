@@ -46,6 +46,44 @@ export default defineComponent({
       <SplideTrack>
         <SplideSlide>
           <div class="project-box" id="wordle-clone">
+            <h1>Campus Dual App</h1>
+            <div class="image-box">
+              <img src="/campus-dual-app/Screenshot_20240805_184639.jpg">
+              <img src="/campus-dual-app/Screenshot_20240805_184650.jpg">
+              <img src="/campus-dual-app/Screenshot_20240805_184653.jpg">
+              <img src="/campus-dual-app/Screenshot_20240805_184710.jpg">
+            </div>
+            <p>
+              The management portal of my university was not very nice to work with and had no mobile app.
+              So I decided to cody my own, which uses a combinantion of publicly available api endpoints and 
+              scraping the rendered html documents to get all the data i want and display them in an elegant fashion.
+              I also added some qol features like credential caching and offline viewing.
+              This app doesn't require any external server (beside the university-server) to work as it saves all
+              data locally.
+            </p>
+            <div class="buttons">
+              <a id="code" href="https://github.com/Schrankian/campus-dual-app" target="_blank">Code</a>
+              <div class="skills">
+                <div class="col">
+                  <h3>Language</h3>
+                  <div class="ps">
+                    <p>Dart</p>
+                    <p>Kotlin</p>
+                  </div>
+                </div>
+                <div class="divider" />
+                <div class="col">
+                  <h3>Framework</h3>
+                  <div class="ps">
+                    <p>Flutter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div class="project-box" id="wordle-clone">
             <h1>Wordle Clone</h1>
             <div class="image-box">
               <img src="/wordle/main_menu.jpeg">
@@ -64,7 +102,7 @@ export default defineComponent({
               which helped me a lot while coding it.
             </p>
             <div class="buttons">
-              <!--<RouterLink to="/projects/wordle">Try the Demo</RouterLink>-->
+              <RouterLink to="/projects/wordle" id="code">Try it</RouterLink>
               <a id="code" href="https://github.com/Schrankian/wordle-clone" target="_blank">Code</a>
               <div class="skills">
                 <div class="col">
@@ -246,6 +284,7 @@ export default defineComponent({
 #code{
   padding-left: 30px;
   padding-right: 30px;
+  text-wrap: nowrap;
 }
 
 .image-box {

@@ -4,7 +4,7 @@ import Loader from '../components/loader.vue'
 
 <template>
     <Loader/>
-    <iframe src="/public/wordle/game/"></iframe>
+    <iframe src="/wordle/game/"></iframe>
 </template>
 
 <style scoped>
